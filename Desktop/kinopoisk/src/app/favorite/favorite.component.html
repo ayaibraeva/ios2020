@@ -1,0 +1,26 @@
+
+<div class="cart-container">
+  <div class="cart">
+
+    <h3>Избранные</h3>
+    <button (click)="clearFav()">Очистить избранные</button>
+
+
+    <div class="movie-item" *ngFor="let movie of moviesFav">
+
+      <h3>
+        <a routerLink="/movie-id/{{movie.id}}" [title]="movie.name + ' details'" >
+          {{ movie.name }}
+        </a>
+      </h3>
+      <img src={{movie.image}} >
+      <br>
+      <h4> {{ movie.year }}  <span style="color: blue;float:right;font-size: 10px;"> Рейтинг: {{ movie.rating }} </span></h4>
+
+    </div>
+  </div>
+
+
+  </div>
+
+

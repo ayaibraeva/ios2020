@@ -1,0 +1,19 @@
+
+<div class="movies">
+  <h2 style="text-align:center;">Фильмы</h2>
+  <button (click)="sortByRatingDesc()">Сортировать по рейтингу</button>
+
+</div><div class="movies">
+    <div class="movie-item" *ngFor="let movie of movies">
+
+        <h3>
+            <a routerLink="/movie-id/{{movie.id}}" [title]="movie.name + ' details'" >
+                {{ movie.name }}
+            </a>
+        </h3>
+        <img class="image" src={{movie.image}} >
+        <br>
+        <h4> {{ movie.year }}  <span style="color: blue;float:right;font-size: 10px;"> rating: {{ movie.rating }} </span></h4>
+         <button (click)="addToFav(movie)">Добавить в Избранное</button>
+    </div>
+</div>

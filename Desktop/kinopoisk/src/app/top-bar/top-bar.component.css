@@ -1,0 +1,49 @@
+.header {
+    overflow: hidden;
+    background-color: #111d2f;
+    padding: 20px 10px;
+    height: 10%;
+    margin-bottom: 0px;
+
+  }
+
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+
+  }
+
+
+  .header a:hover {
+    background-color: #5681c2;
+    color: black;
+  }
+
+
+  .header a.active {
+    background-color: #eef2f9;
+    color: #111d2f;
+  }
+
+
+  .header-right {
+    float: right;
+  }
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

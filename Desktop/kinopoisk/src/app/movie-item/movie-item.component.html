@@ -1,0 +1,35 @@
+<div class="all">
+    <div class="big-container">
+      <div class="block">
+
+        <h3 class="title">
+            {{ movie.name }}
+        </h3>
+        <img id="main" src="{{ movie.image }}" >
+      </div>
+      <div class="block-2">
+        <h4> <span class="blue">Год:</span> {{ movie.year }} </h4>
+        <h5>
+          <span class="blue">Описание:</span>:<br> {{ movie.description }}
+        </h5>
+        <h6>  <span class="rating"> Рейтинг: {{ movie.rating }} </span></h6>
+        <button (click)="addToFav(movie)">Добавить в Избранное</button>
+      </div>
+    </div>
+  <div class="movies">
+    <div class="movie-item" *ngFor="let movie of movies">
+
+      <h3>
+        <a routerLink="/movie-id/{{movie.id}}" [title]="movie.name + ' details'" >
+          {{ movie.name }}
+        </a>
+      </h3>
+      <img src="{{movie.image}}" >
+      <br>
+      <h4> {{ movie.year }} <span style="color: red;float:right;font-size: 10px;"> rating: {{ movie.rating }} </span></h4>
+    </div>
+    <div>
+
+
+</div>
+

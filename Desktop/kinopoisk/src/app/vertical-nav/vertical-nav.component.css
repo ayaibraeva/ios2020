@@ -1,0 +1,43 @@
+
+.vertical_navigator{
+  width: 200px;
+
+  background-color: #365c96;
+}
+.search-hero {
+
+  padding-bottom: 0px;
+  margin:auto;
+}
+input {
+    width: 180px;
+    background-color: #1b2e4b;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+}
+ a{
+     /* Grey background color */
+    color: white; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    border-top: 1px solid darkgray;
+}
+
+ a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+   color:black;
+  }
+
+a:active {
+    background-color: white; /* Add a green color to the "active/current" link */
+    color: #1b2e4b;
+}
+.center{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
